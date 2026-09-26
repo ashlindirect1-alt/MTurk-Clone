@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - MTurk Clone</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            MTurk<span>Clone</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="post-task.html">Post a Task</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header">
+
+        <h1>Worker Dashboard</h1>
+
+        <p>
+            View your applications and track your task progress.
+        </p>
+
+    </header>
+
+
+    <!-- Dashboard Content -->
+    <main class="dashboard-container">
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Applications</h3>
+                <p id="applicationCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Total Earnings</h3>
+                <p id="totalEarnings">$0.00</p>
+            </div>
+
+        </section>
+
+
+        <!-- Applications -->
+        <section class="applications-section">
+
+            <div class="section-title">
+                <h2>My Applications</h2>
+            </div>
+
+            <div id="applicationsList">
+
+                <p class="loading">
+                    Loading applications...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

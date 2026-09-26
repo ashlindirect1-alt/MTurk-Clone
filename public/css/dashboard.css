@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #111827;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff9900;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff9900;
+}
+
+
+/* Header */
+
+.dashboard-header {
+    background: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.dashboard-header p {
+    color: #666;
+}
+
+
+/* Main */
+
+.dashboard-container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* Statistics */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+
+/* Applications */
+
+.applications-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    font-size: 26px;
+}
+
+
+/* Application Card */
+
+.application-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 15px;
+}
+
+.application-card h3 {
+    margin-bottom: 10px;
+}
+
+.application-card p {
+    margin: 7px 0;
+    color: #555;
+}
+
+.status {
+    display: inline-block;
+    background: #fff3cd;
+    color: #856404;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.payment {
+    color: #16803c;
+    font-weight: bold;
+}
+
+.loading,
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        width: 92%;
+    }
+
+}

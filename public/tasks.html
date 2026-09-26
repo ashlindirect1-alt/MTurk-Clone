@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Marketplace - MTurk Clone</title>
+
+    <link rel="stylesheet" href="css/tasks.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            MTurk<span>Clone</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="tasks.html" class="active">
+                Tasks
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="post-task.html">
+                Post a Task
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Page Header -->
+
+    <header class="page-header">
+
+        <h1>
+            Task Marketplace
+        </h1>
+
+        <p>
+            Browse available micro-tasks and start earning by completing them.
+        </p>
+
+    </header>
+
+
+    <!-- Filters -->
+
+    <section class="filters">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search tasks..."
+        >
+
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Data Entry">
+                Data Entry
+            </option>
+
+            <option value="Surveys">
+                Surveys
+            </option>
+
+            <option value="Transcription">
+                Transcription
+            </option>
+
+            <option value="Research">
+                Research
+            </option>
+
+            <option value="Testing">
+                Testing
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- Tasks -->
+
+    <main class="tasks-container">
+
+        <div class="section-title">
+
+            <h2>
+                Available Tasks
+            </h2>
+
+            <span id="taskCount">
+                Loading...
+            </span>
+
+        </div>
+
+
+        <div
+            id="tasksList"
+            class="tasks-grid"
+        >
+
+            <p class="loading">
+                Loading tasks...
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/tasks.js"></script>
+
+</body>
+
+</html>
